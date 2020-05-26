@@ -1,0 +1,1 @@
+If the deck is not empty the player should not be allowed to pass

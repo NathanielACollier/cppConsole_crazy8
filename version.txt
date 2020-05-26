@@ -1,0 +1,24 @@
+0.50 - 2/15/2007
+	   Created the version.txt file so all changes before 0.48 are unknown
+	     Added a C8_VERSION define at the top of crazy8.cpp it will need to be
+	     incrimented at every change and this file will need to be updated.
+	   Added the current version to the title screen.
+	   Fixed the bug with addcard command
+	   	the first argument of all functions is the function name so it was
+	   	passing the following to the get_card_with_abv function
+	   	"<function_name> <abv_name>" this was fixed to "<abv_name>"
+	   Fixed bug with playing an 8
+	   	it would crash because the bank was not declared external in the 
+	   	cmd.cpp file
+	   Change over to multiple files instead of one large file
+	   All of the bug fixes involved in the conversion
+	   High score system html and text output files
+			only the text version can be used as an input file
+0.49 - 2/14/2007
+	   Changes to the ncolor.cpp color library html print function
+	   	it now converts newlines ('\n') tabs ('\t') and space (' ') to the proper
+		html characters
+		* there is a bug with some of the colors still not rendering right after
+		  the addition of character replacement for whitespace.
+0.48	- unknown
+	   		 

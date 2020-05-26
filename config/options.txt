@@ -1,0 +1,11 @@
+## Nathaniel Collier
+## 10/01/2006
+## Crazy8 Options file
+num_players 4
+## Name Section
+## syntax:  name followed by a number 0 - 3 of 4 players then a string which 
+##          is the name that will be displayed ingame
+name 0 pc
+name 1 cpu1
+name 2 cpu2
+name 3 cpu3
