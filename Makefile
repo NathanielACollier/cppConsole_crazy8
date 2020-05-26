@@ -1,6 +1,12 @@
 # Nathaniel Collier
 # 2/2/2007
 # Crazy8 Game Makefile
+
+#Example:   export set NAC_LIB_DIR=~/binCLib
+ifeq ($(NAC_LIB_DIR),)
+  $(error NAC_LIB_DIR is not set)
+endif
+
 CC = g++
 
 EXE_FILE = crazy8.exe
@@ -20,7 +26,8 @@ L_FILES := $(patsubst %, $(LIB_DIR)/lib%.a, $(LIB_FILES))
 
 O_FILES := $(patsubst %.cpp,o/%.o,$(C_FILES))
 
-all: 
+all:
+	mkdir -p o
 	make -s $(EXE_FILE)
 
 $(EXE_FILE): $(O_FILES)

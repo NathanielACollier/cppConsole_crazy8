@@ -1,5 +1,6 @@
 
 #include <string>
+#include <cstring> // for memset
 
 using namespace std;
 
